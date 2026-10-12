@@ -1,1 +1,74 @@
-s
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131d">
+  <title>Jetgeez Wallpaper Catalog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">JETGEEZ KEYBOARD</p>
+      <h1>Wallpaper catalog</h1>
+      <p class="intro">Curate keyboard backgrounds for the Online images tab. Add images hosted in this repository, then download and publish the updated catalog.</p>
+      <div class="catalog-status" id="catalog-status" role="status">Loading catalog…</div>
+    </header>
+
+    <section class="panel" aria-labelledby="add-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PUBLISH AN IMAGE</p>
+          <h2 id="add-title">Add a wallpaper</h2>
+        </div>
+        <span class="count" id="wallpaper-count">0 images</span>
+      </div>
+      <form id="wallpaper-form">
+        <label>
+          Display name
+          <input name="name" required maxlength="60" placeholder="Addis at dusk">
+        </label>
+        <label>
+          Image URL or path
+          <input name="image" required placeholder="images/addis-at-dusk.webp">
+        </label>
+        <label>
+          Preview URL or path <span class="optional">Optional</span>
+          <input name="thumbnail" placeholder="thumbs/addis-at-dusk.webp">
+        </label>
+        <label>
+          Artist / source credit <span class="optional">Optional</span>
+          <input name="author" maxlength="80" placeholder="Photo by …">
+        </label>
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">Add to catalog</button>
+          <button class="button button-secondary" id="download-json" type="button">Download index.json</button>
+        </div>
+        <p class="hint">Use HTTPS URLs or paths relative to this folder. Store image files in <code>images/</code> and optional smaller previews in <code>thumbs/</code>. The app downloads the original only after a user selects it.</p>
+      </form>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PREVIEW</p>
+          <h2 id="gallery-title">Published wallpapers</h2>
+        </div>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-icon" aria-hidden="true">✦</span>
+        <h3>Your catalog is ready</h3>
+        <p>Add your first image above. There are no wallpapers in the starter catalog yet.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>Catalog format: JSON version 1</span>
+      <span>Publish <code>index.json</code> beside this page on GitHub Pages.</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
