@@ -2,14 +2,34 @@
   "version": 1,
   "images": [
     {
-      "id": "wallpaper-00",
-      "name": "Wallpaper 00",
-      "image": "https://oxpc2.github.io/jetbgimg/images/00.webp"
+      "id": "aa",
+      "name": "AA",
+      "image": "https://oxpc2.github.io/jetbgimg/images/aa.png"
     },
     {
-      "id": "wallpaper-01",
-      "name": "Wallpaper 01",
-      "image": "https://oxpc2.github.io/jetbgimg/images/01.webp"
+      "id": "aurora-mountains",
+      "name": "Aurora Mountains",
+      "image": "https://oxpc2.github.io/jetbgimg/images/aurora_mountains.webp"
+    },
+    {
+      "id": "modern-cyber",
+      "name": "Modern Cyber",
+      "image": "https://oxpc2.github.io/jetbgimg/images/modern_cyber.webp"
+    },
+    {
+      "id": "premium-black-hole",
+      "name": "Black Hole",
+      "image": "https://oxpc2.github.io/jetbgimg/images/premium_black_hole.webp"
+    },
+    {
+      "id": "premium-constellation-atlas",
+      "name": "Constellation Atlas",
+      "image": "https://oxpc2.github.io/jetbgimg/images/premium_constellation_atlas.webp"
+    },
+    {
+      "id": "premium-football-nights",
+      "name": "Football Nights",
+      "image": "https://oxpc2.github.io/jetbgimg/images/premium_football_nights.webp"
     }
   ]
 }
